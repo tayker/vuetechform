@@ -1,0 +1,34 @@
+{
+  "form": [
+    {
+      "name": "affiliate",
+      "title": "Affiliate"
+    },
+    {
+      "name": "balance",
+      "title": "Balance"
+    },
+    {
+      "name": "bonus_balance",
+      "title": "Bonus balance"
+    },
+    {
+      "name": "campaign",
+      "title": "Campaign"
+    },
+    {
+      "name": "cash_balance",
+      "title": "Cash balance"
+    },
+    {
+      "name": "country",
+      "title": "Country"
+    },
+    {
+      "name": "trader_points",
+      "title": "Trader points"
+    }
+  ],
+  "formRes": [
+  ]
+}
