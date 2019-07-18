@@ -18,7 +18,7 @@
                 >
                     <div class="element-content">
                         <div class="number">
-                            {{ element.priority = index + 1 }}.
+                            {{ element.priority }}.
                         </div>
                         <select 
                             v-model="element.selected"
@@ -108,11 +108,15 @@ export default {
             this.formElements.push({
                 selected: '',
                 sort: 'ASC',
-                priority: 0
+                priority: this.formElements.length === 0 ? 1 : this.formElements[this.formElements.length - 1].priority + 1
             })
         },
         deleteLabel(idx) {
             this.formElements.splice(idx, 1);
+
+            for(let i = idx; i < this.formElements.length; i++ ) {
+                this.formElements[i].priority--;
+            }
         },
         matchSelected(labelName) {
             return this.formElements.filter(function(el) {
